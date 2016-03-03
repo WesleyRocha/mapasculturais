@@ -1,0 +1,42 @@
+//
+// Overrides
+// --------------------------------------------------
+//## Style rules that overrides the default theme's ones.
+//## To make it easy to maintain and to avoid cascading problems,
+//## just before the new rules, document the name of the Sass partial
+//## where the original styles leave, group them per folder and keep
+//## them in the same order as the original styles are imported to the main.scss.
+
+//
+// application/
+// --------------------------------------------------
+
+
+// _header.scss
+#secondary-menu {
+	li a{
+	    color: #004081;
+	}
+}
+
+#about-nav {
+    padding: 1.43rem 1.5rem;
+}
+@media screen and (min-width: 768px){
+	#organization-logo img {
+	    width: 114px;
+	}
+}
+
+
+//_home.scss
+#home-watermark {
+	background-image: none;
+}
+
+// #nav-developers {
+//     background: #96161A;
+// }
+// #home-developers {
+//     background: #96161A;
+// }
