@@ -7,8 +7,8 @@ return array_merge($config,
         'app.siteDescription' => 'Descrição do site',
         
         /* configure e descomente as linhas abaixo para habilitar um tema personalizado */
-        // 'namespaces' => array_merge( $config['namespaces'], ['Name\Space\Do\Tema' => '/caminho/absoluto/para/o/tema']),
-        // 'themes.active' => 'Name\Space\Do\Tema',
+        'namespaces' => array_merge( $config['namespaces'], ['obec' => BASE_PATH.'protected/application/themes/obec']),
+        'themes.active' => 'obec',
 
         'themes.assetManager' => new \MapasCulturais\AssetManagers\FileSystem([
             'publishPath' => BASE_PATH . 'assets/',
@@ -22,10 +22,10 @@ return array_merge($config,
         ]),
         
         // development, staging, production
-        'app.mode' => 'production',
+        'app.mode' => 'development',
 
         'doctrine.isDev' => false,
-        'slim.debug' => false,
+        'slim.debug' => true,
         'maps.includeGoogleLayers' => true,
         
         'app.geoDivisionsHierarchy' => [
