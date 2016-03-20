@@ -64,15 +64,15 @@ return array(
         'publishFolderCommand' => 'cp -R {IN} {PUBLISH_PATH}{FILENAME}'
     )),
 
-//    'maps.center' => array(-23.54894, -46.63882), // são paulo
-    'maps.center' => array(-14.2400732, -53.1805018), // brasil
+    // 'maps.center' => array(-14.2400732, -53.1805018), // brasil
+    'maps.center' => array(-15.788619534134423, -47.85472869873047), // brasília
     'maps.maxClusterRadius' => 40,
     'maps.spiderfyDistanceMultiplier' => 1.3,
     'maps.maxClusterElements' => 6,
 
     'maps.geometryFieldQuery' => "ST_SimplifyPreserveTopology(geom, 0.001)",
 
-    'maps.zoom.default' => 5,
+    'maps.zoom.default' => 11,
     'maps.zoom.approximate' => 14,
     'maps.zoom.precise' => 16,
     'maps.zoom.max' => 18,

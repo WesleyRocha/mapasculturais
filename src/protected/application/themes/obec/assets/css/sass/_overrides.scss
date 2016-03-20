@@ -8,35 +8,47 @@
 //## them in the same order as the original styles are imported to the main.scss.
 
 //
+// Globals/
+// --------------------------------------------------
+
+//
+// Modules/
+// --------------------------------------------------
+
+//
+// Globals/
+// --------------------------------------------------
+
+//
 // application/
 // --------------------------------------------------
 
-
 // _header.scss
-#secondary-menu {
-	li a{
-	    color: #004081;
-	}
-}
-
-#about-nav {
-    padding: 1.43rem 1.5rem;
-}
-@media screen and (min-width: 768px){
-	#organization-logo img {
-	    width: 114px;
-	}
-}
-
+// #secondary-menu {
+//      margin-top: 14px;
+// }
 
 //_home.scss
-#home-watermark {
-	background-image: none;
-}
-
+// #home-watermark {
+// 	background-position: right bottom;
+// }
 // #nav-developers {
 //     background: #96161A;
 // }
 // #home-developers {
 //     background: #96161A;
 // }
+
+#home-intro {
+    min-height: calc(100vh - 4.875rem);
+    background: #f00;
+}
+
+//
+// Components/
+// --------------------------------------------------
+
+//
+// vendor/
+
+// --------------------------------------------------
