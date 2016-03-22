@@ -50,6 +50,7 @@ class Theme extends BaseV1\Theme{
 
     protected function _publishAssets() {
         $this->jsObject['assets']['logo-instituicao'] = $this->asset('img/logo-instituicao.png', false);
+        $this->jsObject['assets']['fundo-home1'] = $this->asset('img/fundo.jpg', false);
     }
 
 }
