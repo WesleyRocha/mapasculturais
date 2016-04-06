@@ -1,7 +1,7 @@
 <nav id="home-nav">
     <ul>
         <li><a class="up icon icon-arrow-up" href="#"></a></li>
-        <li id="nav-intro">
+        <!-- <li id="nav-intro">
             <a class="icon icon-home" href="#home-intro"></a>
             <span class="nav-title">Introdução</span>
         </li>
@@ -37,7 +37,7 @@
         <li id="nav-developers">
             <a class="icon icon-developers" href="#home-developers"></a>
             <span class="nav-title">Desenvolvedores</span>
-        </li>
+        </li> -->
         <li><a class="down icon icon-select-arrow" href="#"></a></li>
     </ul>
 </nav>
