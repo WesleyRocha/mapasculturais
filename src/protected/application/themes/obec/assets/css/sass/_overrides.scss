@@ -231,7 +231,7 @@ body{
 
 #home-intro {
     min-height: calc(100vh); // viewport height minus header height
-    background: transparent url(../img/home4.jpg) no-repeat top;
+    background: transparent url(../img/home02.jpg) no-repeat top;
     background-size: cover;
 
     .branding{
@@ -351,7 +351,7 @@ body{
 }
 
 #home-events {
-    background: transparent url(../img/home2.jpg) no-repeat top;
+    background: transparent url(../img/home04.jpg) no-repeat top;
     background-size: cover;
     .abas li.active {
         border-bottom-color: $brand-event;
@@ -360,7 +360,7 @@ body{
 }
 
 #home-agents {
-    background: transparent url(../img/home3.jpg) no-repeat top;
+    background: transparent url(../img/home03.jpg) no-repeat top;
     background-size: cover;
         .abas li.active {
         border-bottom-color: $brand-agent;
@@ -369,7 +369,7 @@ body{
 }
 
 #home-spaces {
-    background: transparent url(../img/home1.jpg) no-repeat top;
+    background: transparent url(../img/home01.jpg) no-repeat top;
     background-size: cover;
         .abas li.active {
         border-bottom-color: $brand-agent;
@@ -377,7 +377,16 @@ body{
 
 }
 #home-projects {
-    background: transparent url(../img/home5.jpg) no-repeat top;
+    background: transparent url(../img/home05.jpg) no-repeat top;
+    background-size: cover;
+        .abas li.active {
+        border-bottom-color: $brand-agent;
+    }
+
+}
+
+#home-developers {
+    background: transparent url(../img/home06.jpg) no-repeat top;
     background-size: cover;
         .abas li.active {
         border-bottom-color: $brand-agent;

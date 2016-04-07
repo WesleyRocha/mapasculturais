@@ -50,11 +50,12 @@ class Theme extends BaseV1\Theme{
 
     protected function _publishAssets() {
         $this->jsObject['assets']['logo-instituicao'] = $this->asset('img/logo-instituicao.png', false);
-        $this->jsObject['assets']['fundo-home1'] = $this->asset('img/home1.jpg', false);
-        $this->jsObject['assets']['fundo-home2'] = $this->asset('img/home2.jpg', false);
-        $this->jsObject['assets']['fundo-home3'] = $this->asset('img/home3.jpg', false);
-        $this->jsObject['assets']['fundo-home4'] = $this->asset('img/home4.jpg', false);
-        $this->jsObject['assets']['fundo-home5'] = $this->asset('img/home5.jpg', false);
+        $this->jsObject['assets']['fundo-home1'] = $this->asset('img/home01.jpg', false);
+        $this->jsObject['assets']['fundo-home2'] = $this->asset('img/home02.jpg', false);
+        $this->jsObject['assets']['fundo-home3'] = $this->asset('img/home03.jpg', false);
+        $this->jsObject['assets']['fundo-home4'] = $this->asset('img/home04.jpg', false);
+        $this->jsObject['assets']['fundo-home5'] = $this->asset('img/home05.jpg', false);
+        $this->jsObject['assets']['fundo-home6'] = $this->asset('img/home06.jpg', false);
         $this->jsObject['assets']['logo-mapa-das-nuvens'] = $this->asset('img/logo-mapa-das-nuvens.png', false);
         $this->jsObject['assets']['mapa-das-nuvens'] = $this->asset('img/mapa-das-nuvens.png', false);
     }
