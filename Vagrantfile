@@ -35,6 +35,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.box = "ubuntu/vivid64"
     config.vm.network "forwarded_port", guest: 8000, host: 8000
 
+    config.vm.provision "shell", inline: config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'", run: "always"
+
     config.vm.provision "shell", inline: $install
 
     config.vm.provision "shell", inline: $serviceup,
