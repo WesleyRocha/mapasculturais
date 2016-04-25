@@ -1,9 +1,13 @@
 <section id="home-intro" class="js-page-menu-item home-entity clearfix">
     <div class="branding">
-        <span class="logo">logo</span>
         <span class="tipo">Mapa das Nuvens</span>
         <h1>Seja bem vindo!</h1>
-        <p class="text">Mapa das Nuvens é uma plataforma colaborativa que reúne informações sobre agentes, espaços, eventos e projetos culturais, fornecendo ao poder público uma radiogra a da área de cultura e ao cidadão um mapa de espaçs e eventos culturais da região. A plataforma está alinhada ao Sistema Nacional de Informação e Indicadores Culturais do Ministério da Cultura (SNIIC) e contribui para a realização de alguns dos objetivos do Plano Nacional de Cultura.</p>
+        <p class="text">Mapa das Nuvens é uma plataforma colaborativa que reúne informações sobre agentes, espaços, eventos e projetos culturais, fornecendo ao poder público uma radiografia da área de cultura e ao cidadão um mapa de espaçs e eventos culturais da região. A plataforma está alinhada ao Sistema Nacional de Informação e Indicadores Culturais do Ministério da Cultura (SNIIC) e contribui para a realização de alguns dos objetivos do Plano Nacional de Cultura.</p>
+        <div class="parceiros">
+            <span class="logo-gdf"></span>
+            <span class="logo-obec"></span>
+            <span class="logo-unb"></span>
+        </div>
     </div>
     <div class="box">
         <form id="home-search-form" class="clearfix" ng-non-bindable>

@@ -13,9 +13,21 @@
 body{
     min-width: 990px;
 }
+
 //
 // Modules/
 // --------------------------------------------------
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+}
 
 //
 // Globals/
@@ -52,8 +64,27 @@ body{
     }
 }
 
+//== Main Nav
+//
+//## Main nav includes entities menu and session menu.
 
-#brand-logo {
+
+#main-nav {
+    clear: both;
+    @media screen and (min-width: $screen-tablet) {
+        clear: none;
+        float: right;
+    }
+    a{
+        color: white;
+    }
+}
+
+#brand-logo{
+    display: none;
+}
+.ng-scope #brand-logo {
+    display: inline;
     float: left;
     padding: .25rem;
     font-size: 1rem;
@@ -67,7 +98,7 @@ body{
     img {
         width: 170px;
         @media screen and (min-width: $screen-tablet) {
-            width: 206px;
+            width: 168px;
         }
     }
     @media screen and (min-width: $screen-tablet) {
@@ -82,6 +113,7 @@ body{
         font-size: 1.5rem; //24px
     }
 }
+
 
 #about-nav {
     float: left;
@@ -244,34 +276,49 @@ body{
         padding: 1em;
         span{
             font-size: 0;
-            &.logo{
-                background: transparent url(../img/logo-mapa-das-nuvens.png) no-repeat top;
-                display: block;
-                height: 150px;
-                background-size: 100%;
-                margin: 20px 0 10px 51%;
-                width: 150px;
-            }
             &.tipo{
                 background: transparent url(../img/mapa-das-nuvens.png) no-repeat top;
                 display: block;
-                height: 130px;
-                width: 255px;
+                height: 186px;
+                width: 300px;
                 background-size: 100%;
-                margin: -56px 0 0 47px;
+                margin: 40px auto 0;
+            }
+        }
+        .parceiros{
+            margin: 0 36px;
+            span{
+                height: 34px;
+                display: inline-block;
+            }
+            .logo-gdf{
+                background: transparent url(../img/logo-gdf.png) no-repeat top;
+                background-size: 100%;
+                width: 120px;
+            }
+            .logo-obec{
+                background: transparent url(../img/OBEC-Logo.png) no-repeat top;
+                background-size: 100%;
+                width: 102px;
+                margin: 0 4px;
+            }
+            .logo-unb{
+                background: transparent url(../img/logo-unb.png) no-repeat top;
+                background-size: 100%;
+                width: 72px;
             }
         }
         h1 {
             font-size: 1.3em;
             font-family: "Open Sans",Helvetica,Arial,sans-serif;
-            margin: 2em 35px 0;
-            color: rgba(255,255,255,0.7);
+            margin: 1.5em 35px 0;
+            color: rgba(255,255,255,1);
         }
         p {
             text-align: center;
             margin-top: 28px;
             font-size: 13px;
-            color: rgba(255,255,255,0.7);
+            color: rgba(255,255,255,1);
             &.text{
                 text-align: left;
                 padding: 0 35px;
@@ -296,12 +343,12 @@ body{
             position: relative;
             .rota {
                 position: absolute;
-                border: 3px solid white;
                 border-radius: 2em;
-                width: 1em;
-                height: 1em;
-                top: 15px;
-                left: -35px;
+                width: 0.8em;
+                height: 0.8em;
+                top: 19px;
+                left: -31px;
+                background: white;
                 .rota1 {
                     border-left: 2px dotted white;
                     border-bottom: 2px dotted white;

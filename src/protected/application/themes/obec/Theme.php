@@ -58,5 +58,8 @@ class Theme extends BaseV1\Theme{
         $this->jsObject['assets']['fundo-home6'] = $this->asset('img/home06.jpg', false);
         $this->jsObject['assets']['logo-mapa-das-nuvens'] = $this->asset('img/logo-mapa-das-nuvens.png', false);
         $this->jsObject['assets']['mapa-das-nuvens'] = $this->asset('img/mapa-das-nuvens.png', false);
+        $this->jsObject['assets']['logo-gdf'] = $this->asset('img/logo-gdf.png', false);
+        $this->jsObject['assets']['OBEC-Logo'] = $this->asset('img/OBEC-Logo.png', false);
+        $this->jsObject['assets']['logo-unb'] = $this->asset('img/logo-unb.png', false);
     }
 }
