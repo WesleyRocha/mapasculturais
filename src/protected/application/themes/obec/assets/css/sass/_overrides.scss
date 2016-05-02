@@ -17,7 +17,16 @@ body{
 //
 // Modules/
 // --------------------------------------------------
-
+@font-face {
+    font-family: 'icomoon';
+    src:url('/assets/fonts/icomoon.eot?8gdkam');
+    src:url('/assets/fonts/icomoon.eot?8gdkam#iefix') format('embedded-opentype'),
+        url('/assets/fonts/icomoon.ttf?8gdkam') format('truetype'),
+        url('/assets/fonts/icomoon.woff?8gdkam') format('woff'),
+        url('/assets/fonts/icomoon.svg?8gdkam#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 h1,
@@ -68,8 +77,17 @@ h6 {
 //
 //## Main nav includes entities menu and session menu.
 
-
 #main-nav {
+    clear: both;
+    @media screen and (min-width: $screen-tablet) {
+        clear: none;
+        float: right;
+    }
+    a{
+    }
+}
+
+.ng-scope #main-nav {
     clear: both;
     @media screen and (min-width: $screen-tablet) {
         clear: none;
@@ -352,12 +370,12 @@ h6 {
                 .rota1 {
                     border-left: 2px dotted white;
                     border-bottom: 2px dotted white;
-                    height: 5em;
+                    height: 5.5em;
                     border-radius: 0 0 0 14px;
                     width: 17.2em;
                     position: absolute;
-                    top: 20px;
-                    left: 7px;
+                    top: 12px;
+                    left: 6px;
                 }
                 .rota2 {
                     border-top: 2px dotted white;
@@ -521,6 +539,54 @@ h6 {
 //
 // Components/
 // --------------------------------------------------
+
+//** Event icon
+
+$unicode-event: '\e901';
+$unicode-space: '\e906';
+$unicode-agent: '\e900';
+$unicode-project: '\e905';
+
+.icon-event, .icon-space, .icon-agent, .icon-project{
+    width: 2.2rem;
+    &:before{
+        margin-top: -5px;
+        font-size: 2.2em;
+        font-family: 'icomoon' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+.icon-event {
+    &:before {
+        content: $unicode-event;
+    }
+}
+.icon-space {
+    &:before {
+        content: $unicode-space;
+    }
+}
+.icon-agent {
+    &:before {
+        content: $unicode-agent;
+    }
+}
+.icon-project {
+    &:before {
+        content: $unicode-project;
+    }
+}
+
 
 //
 // vendor/
