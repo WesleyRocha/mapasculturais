@@ -30,7 +30,7 @@
             <li id="entities-menu-event" ng-class="{'active':data.global.filterEntity === 'event'}" ng-click="tabClick('event')">
                 <a href="<?php if ($this->controller->action !== 'search') echo $app->createUrl('busca') . '##(global:(enabled:(event:!t),filterEntity:event))'; ?>">
                     <div class="icon icon-event"></div>
-                    <div class="menu-item-label">Eventos</div>
+                    <div class="menu-item-label">Ações</div>
                 </a>
             </li>
             <?php $this->applyTemplateHook('nav.main.events','after'); ?>
@@ -60,12 +60,12 @@
             
         <?php if($app->isEnabled('projects')): ?>
             <?php $this->applyTemplateHook('nav.main.projects','before'); ?>
-            <li id="entities-menu-project"  ng-class="{'active':data.global.filterEntity === 'project'}" ng-click="tabClick('project')">
+            <!--li id="entities-menu-project"  ng-class="{'active':data.global.filterEntity === 'project'}" ng-click="tabClick('project')">
                 <a href="<?php if ($this->controller->action !== 'search') echo $app->createUrl('busca') . '##(global:(enabled:(project:!t),filterEntity:project,viewMode:list))'; ?>">
                     <div class="icon icon-project"></div>
                     <div class="menu-item-label">Projetos</div>
                 </a>
-            </li>
+            </li-->
             <?php $this->applyTemplateHook('nav.main.projects','after'); ?>
         <?php endif; ?>
     </ul>
@@ -137,7 +137,7 @@
                     <?php if($app->isEnabled('events')): ?>
                         <?php $this->applyTemplateHook('nav.dropdown.events','before'); ?>
                         <li>
-                            <a href="<?php echo $app->createUrl('panel', 'events') ?>">Meus Eventos</a>
+                            <a href="<?php echo $app->createUrl('panel', 'events') ?>">Minhas Ações</a>
                             <a class="add" href="<?php echo $app->createUrl('event', 'create') ?>" ></a>
                         </li>
                         <?php $this->applyTemplateHook('nav.dropdown.events','after'); ?>

@@ -20,7 +20,7 @@ $url_search_projects = $this->searchProjectsUrl;
 
 $project_img_attributes = 'class="random-feature no-image"';
 ?>
-<article id="home-projects" class="js-page-menu-item home-entity clearfix">
+<!-- article id="home-projects" class="js-page-menu-item home-entity clearfix">
     <div class="box">
         <div class="box-content">
             <h1><span class="icon icon-project"></span> Projetos</h1>
@@ -62,8 +62,8 @@ $project_img_attributes = 'class="random-feature no-image"';
                     </div>
                 </a>
             <?php endif; ?>
-           <!--  <a class="btn btn-accent btn-large add" href="<?php echo $app->createUrl('project', 'create') ?>">Adicionar projeto</a>
-            <a class="btn btn-accent btn-large" href="<?php echo $url_search_projects ?>">Ver tudo</a> -->
+            <a class="btn btn-accent btn-large add" href="<?php echo $app->createUrl('project', 'create') ?>">Adicionar projeto</a>
+            <a class="btn btn-accent btn-large" href="<?php echo $url_search_projects ?>">Ver tudo</a>
         </div>
     </div>
-</article>
+</article-->

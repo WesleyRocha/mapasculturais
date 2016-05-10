@@ -35,7 +35,7 @@ $url_search_spaces = $this->searchSpacesUrl;
                     <div class="statistic-label"><?php $this->dict('entities: spaces') ?> da <?php $this->dict('home: abbreviation'); ?></div>
                 </div>
             </div>
-            <p><?php $this->dict('home: spaces'); ?></p>
+            <p>Espaço cultural é qualquer lugar que possa ser identificado como um ponto referenciado para a criação, formação e a fruição cultural.</p>
             <h4>Encontre <?php $this->dict('entities: spaces') ?> por</h4>
             <ul class="abas clearfix">
                 <li class="active"><a href="#space-terms">Área de atuação</a></li>

@@ -24,19 +24,19 @@ $url_search_events = $this->searchEventsUrl;
 <article id="home-events" class="js-page-menu-item home-entity clearfix">
     <div class="box">
         <div class="box-content">
-            <h1><span class="icon icon-event"></span> Eventos</h1>
+            <h1><span class="icon icon-event"></span> Ações</h1>
             <div class="clearfix">
                 <div class="statistics">
                     <div class="statistic"><?php echo $num_events ?></div>
-                    <div class="statistic-label">eventos agendados</div>
+                    <div class="statistic-label">ações agendados</div>
                 </div>
                 <div class="statistics">
                     <div class="statistic"><?php echo $num_verified_events ?></div>
-                    <div class="statistic-label">eventos da <?php $this->dict('home: abbreviation'); ?></div>
+                    <div class="statistic-label">ações da <?php $this->dict('home: abbreviation'); ?></div>
                 </div>
             </div>
-            <p><?php $this->dict('home: events') ?></p>
-            <h4>Encontre eventos por</h4>
+            <p>Ação cultural é a parte mínima de um projeto cultural, continuado ou não, multidisciplinar ou setorial, que tenha objetivo definido e impacto imediato.</p>
+            <h4>Encontre ações por</h4>
             <ul class="abas clearfix">
                 <li class="active"><a href="#event-terms">Linguagem</a></li>
             </ul>

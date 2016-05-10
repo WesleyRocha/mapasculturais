@@ -37,7 +37,7 @@ $url_search_agents = $this->searchAgentsUrl;
                     <div class="statistic-label">agentes da <?php $this->dict('home: abbreviation'); ?></div>
                 </div>
             </div>
-            <p>Você pode colaborar na gestão da cultura com suas próprias informações, preenchendo seu perfil de agente cultural. Neste espaço, estão registrados artistas, gestores e produtores.</p>
+            <p>Agente cultural é o fazedor de cultura e/ou o mobilizador cultural, individual ou coletivo, que se engaja na criação, produção, promoção e fruição das atividades culturais no e do seu território.</p>
             <h4>Encontre agentes por</h4>
             <ul class="abas clearfix">
                 <li class="active"><a href="#agent-terms">Área de atuação</a></li>
