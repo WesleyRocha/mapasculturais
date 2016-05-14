@@ -24,7 +24,10 @@ $url_search_events = $this->searchEventsUrl;
 <article id="home-events" class="js-page-menu-item home-entity clearfix">
     <div class="box">
         <div class="box-content">
-            <h1><span class="icon icon-event"></span> Ações</h1>
+            <h1>
+                <a href="<?php if ($this->controller->action !== 'search') echo $app->createUrl('busca') . '##(global:(enabled:(event:!t),filterEntity:event))'; ?>">
+                    <span class="icon icon-event"></span> Ações</h1>
+                </a>
             <div class="clearfix">
                 <div class="statistics">
                     <div class="statistic"><?php echo $num_events ?></div>

@@ -26,7 +26,11 @@ $url_search_agents = $this->searchAgentsUrl;
 <article id="home-agents" class="js-page-menu-item home-entity clearfix">
     <div class="box">
         <div class="box-content">
-            <h1><span class="icon icon-agent"></span> Agentes</h1>
+            <h1>
+                <a href="<?php if ($this->controller->action !== 'search') echo $app->createUrl('busca') . '##(global:(enabled:(agent:!t),filterEntity:agent))'; ?>">
+                    <span class="icon icon-agent"></span> Agentes
+                </a>
+            </h1>
             <div class="clearfix">
                 <div class="statistics">
                     <div class="statistic"><?php echo $num_agents ?></div>

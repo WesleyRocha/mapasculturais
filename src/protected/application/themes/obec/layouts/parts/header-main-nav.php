@@ -36,17 +36,6 @@
             <?php $this->applyTemplateHook('nav.main.events','after'); ?>
         <?php endif; ?>
             
-        <?php if($app->isEnabled('spaces')): ?>
-            <?php $this->applyTemplateHook('nav.main.spaces','before'); ?>
-            <li id="entities-menu-space" ng-class="{'active':data.global.filterEntity === 'space'}" ng-click="tabClick('space')">
-                <a href="<?php if ($this->controller->action !== 'search') echo $app->createUrl('busca') . '##(global:(enabled:(space:!t),filterEntity:space))'; ?>">
-                    <div class="icon icon-space"></div>
-                    <div class="menu-item-label"><?php $this->dict('entities: Spaces') ?></div>
-                </a>
-            </li>
-            <?php $this->applyTemplateHook('nav.main.spaces','after'); ?>
-        <?php endif; ?>
-        
         <?php if($app->isEnabled('agents')): ?>
             <?php $this->applyTemplateHook('nav.main.agents','before'); ?>
             <li id="entities-menu-agent" ng-class="{'active':data.global.filterEntity === 'agent'}" ng-click="tabClick('agent')">
@@ -56,6 +45,17 @@
                 </a>
             </li>
             <?php $this->applyTemplateHook('nav.main.agents','after'); ?>
+        <?php endif; ?>
+
+        <?php if($app->isEnabled('spaces')): ?>
+            <?php $this->applyTemplateHook('nav.main.spaces','before'); ?>
+            <li id="entities-menu-space" ng-class="{'active':data.global.filterEntity === 'space'}" ng-click="tabClick('space')">
+                <a href="<?php if ($this->controller->action !== 'search') echo $app->createUrl('busca') . '##(global:(enabled:(space:!t),filterEntity:space))'; ?>">
+                    <div class="icon icon-space"></div>
+                    <div class="menu-item-label"><?php $this->dict('entities: Spaces') ?></div>
+                </a>
+            </li>
+            <?php $this->applyTemplateHook('nav.main.spaces','after'); ?>
         <?php endif; ?>
             
         <?php if($app->isEnabled('projects')): ?>

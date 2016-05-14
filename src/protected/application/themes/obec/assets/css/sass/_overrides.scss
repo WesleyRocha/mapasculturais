@@ -46,6 +46,17 @@ h6 {
 // application/
 // --------------------------------------------------
 
+// entity filter id's to set its background-color
+#filter-events {
+    background: $brand-event !important;
+}
+#filter-agents {
+    background: $brand-agent !important;
+}
+#filter-spaces {
+    background: $brand-space !important;
+}
+
 // _header.scss
 #main-header {
     position: fixed;
@@ -262,7 +273,66 @@ h6 {
         border-left: 0px solid $brand-accent;
     }
 }
-
+//** Events
+#entities-menu-event {
+    &.active, &:hover {
+        border-top-color: #52FF92;
+        color: #52FF92;
+        a {
+            color: #52FF92;
+        }
+    }
+    &.active {
+        border-top-color: $brand-event;
+        color: $brand-event;
+        a {
+            color: $brand-event;
+        }
+        &:after {
+            @include arrow(up, $caret-width-base, $brand-event);
+        }
+    }
+}
+//** Agents
+#entities-menu-agent {
+    &.active, &:hover {
+        border-top-color: #FFC74C;
+        color: #FFC74C;
+        a {
+            color: #FFC74C;
+        }
+    }
+    &.active {
+        border-top-color: $brand-agent;
+        color: $brand-agent;
+        a {
+            color: $brand-agent;
+        }
+        &:after {
+            @include arrow(up, $caret-width-base, $brand-agent);
+        }
+    }
+}
+//** Spaces
+#entities-menu-space {
+    &.active, &:hover {
+        border-top-color: #FFDBD2;
+        color: #FFDBD2;
+        a {
+            color: #FFDBD2;
+        }
+    }
+    &.active {
+        border-top-color: $brand-space;
+        color: $brand-space;
+        a {
+            color: $brand-space;
+        }
+        &:after {
+            @include arrow(up, $caret-width-base, $brand-space);
+        }
+    }
+}
 
 // _mais-section.scss
 #main-section {
@@ -302,29 +372,6 @@ h6 {
                 width: 300px;
                 background-size: 100%;
                 margin: 5px auto 0;
-            }
-        }
-        .parceiros{
-            margin: 0 36px;
-            span{
-                height: 34px;
-                display: inline-block;
-            }
-            .logo-gdf{
-                background: transparent url(../img/logo-gdf.png) no-repeat top;
-                background-size: 100%;
-                width: 120px;
-            }
-            .logo-obec{
-                background: transparent url(../img/OBEC-Logo.png) no-repeat top;
-                background-size: 100%;
-                width: 102px;
-                margin: 0 4px;
-            }
-            .logo-unb{
-                background: transparent url(../img/logo-unb.png) no-repeat top;
-                background-size: 100%;
-                width: 72px;
             }
         }
         h1 {
@@ -460,6 +507,29 @@ h6 {
     h1{
         margin-top: 2em;
     }
+    .parceiros{
+        margin: 0px;
+        span{
+            height: 34px;
+            display: inline-block;
+        }
+        .logo-gdf{
+            background: transparent url(../img/logo-gdf.png) no-repeat top;
+            background-size: 100%;
+            width: 186px;
+        }
+        .logo-obec{
+            background: transparent url(../img/OBEC-Logo.png) no-repeat top;
+            background-size: 100%;
+            width: 164px;
+            margin: 0 12px;
+        }
+        .logo-unb{
+            background: transparent url(../img/logo-unb.png) no-repeat top;
+            background-size: 100%;
+            width: 122px;
+        }
+    }
 }
 
 
@@ -485,8 +555,14 @@ h6 {
                 padding: .75rem;
                 border-radius: 2px;
             }
-            h1 .icon{
-                font-size: 1.4rem;
+            h1{ 
+                a{
+                    color: white;
+                }
+                .icon{
+                    font-size: 1.4rem;
+
+                }
             }
         }
     }

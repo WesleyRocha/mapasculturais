@@ -107,31 +107,36 @@
                         $('#infobox').height($('#search-map-container').height() - 44)
 
                     $mapa.data('oldHeight', $mapa.height());
-                } else if (scrollTop == 0 && !$mapa.is(':visible'))
+                } else if (scrollTop == 0 && !$mapa.is(':visible')){
                     $busca.removeClass('sombra');
-                else
+                } else{
                     $busca.addClass('sombra');
+                }
+                
+                
 
 
                 $('body').css('min-height', $(window).height() + headerHeight - headerDosResultadosHeight - 30);
 
             }
 
-            if (newHeaderTop <= -headerHeight) {
-                newHeaderTop = -headerHeight;
+            if ($('#search-map-container').length){
+                if (newHeaderTop <= -headerHeight) {
+                    newHeaderTop = -headerHeight;
 
-            } else if (newHeaderTop >= 0) {
-                newHeaderTop = 0;
+                } else if (newHeaderTop >= 0) {
+                    newHeaderTop = 0;
 
-            } else if (newHeaderTop < -$(window).scrollTop()) {
-                newHeaderTop = -$(window).scrollTop();
+                } else if (newHeaderTop < -$(window).scrollTop()) {
+                    newHeaderTop = -$(window).scrollTop();
+                }
+                if (parseInt($mainHeader.css('top')) <= -headerHeight + 3)
+                    $mainHeader.removeClass('sombra');
+                else
+                    $mainHeader.addClass('sombra');
+
+                $mainHeader.css('top', newHeaderTop);
             }
-            if (parseInt($mainHeader.css('top')) <= -headerHeight + 3)
-                $mainHeader.removeClass('sombra');
-            else
-                $mainHeader.addClass('sombra');
-
-            $mainHeader.css('top', newHeaderTop);
 
 
 

@@ -24,7 +24,11 @@ $url_search_spaces = $this->searchSpacesUrl;
 <article id="home-spaces" class="js-page-menu-item home-entity clearfix">
     <div class="box">
         <div class="box-content">
-            <h1><span class="icon icon-space"></span> <?php $this->dict('entities: Spaces') ?></h1>
+            <h1>
+                <a href="<?php if ($this->controller->action !== 'search') echo $app->createUrl('busca') . '##(global:(enabled:(space:!t),filterEntity:space))'; ?>">
+                    <span class="icon icon-space"></span> <?php $this->dict('entities: Spaces') ?>
+                </a>
+            </h1>
             <div class="clearfix">
                 <div class="statistics">
                     <div class="statistic"><?php echo $num_spaces ?></div>

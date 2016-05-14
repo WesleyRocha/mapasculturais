@@ -2,14 +2,11 @@
     <div class="branding">
         <span class="tipo">Mapa das Nuvens</span>
         <h1>Seja bem vindo!</h1>
-        <p class="text">O Distrito Federal é um mosaico cultural, um território com influências de todo Brasil. Essa diversidade é acolhida por um elemento em comum: o céu, e o movimento de suas nuvens, marca de nossa cidade, sob o qual convivem tradição e inovação.<br/>
-                        É com espírito de pluralidade, que nasce o MAPA DAS NUVENS: espaço colaborativo de mapeamento de pessoas, lugares, territórios e ações artísticas no DF.<br/>
-                        Navegue nesse espaço e descubra a cultura do DF! Seja bem-vindo ao MAPA DAS NUVENS!</p>
-        <div class="parceiros">
-            <span class="logo-gdf"></span>
-            <span class="logo-obec"></span>
-            <span class="logo-unb"></span>
-        </div>
+        <p class="text">
+            O Distrito Federal é um mosaico cultural, um território com influências de todo Brasil. Essa diversidade é acolhida por um elemento em comum: o céu, e o movimento de suas nuvens, marca de nossa cidade, sob o qual convivem tradição e inovação.<br/>
+            É com espírito de pluralidade que nasce o MAPA DAS NUVENS: espaço colaborativo de mapeamento de pessoas, lugares, territórios e ações artísticas no DF.<br/>
+            Navegue nesse espaço e descubra a cultura do DF! Seja bem-vindo ao MAPA DAS NUVENS!
+        </p>
     </div>
     <div class="box">
         <form id="home-search-form" class="clearfix" ng-non-bindable>
