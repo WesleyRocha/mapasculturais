@@ -107,7 +107,7 @@ h6 {
         display: none;
     }
     .login .icon-login {
-        @media screen and (min-width: $screen-tablet) {
+        @media screen and (max-width: $screen-tablet) {
                 font-size: 1.3rem;
                 margin-top: 0.25rem;
         }
