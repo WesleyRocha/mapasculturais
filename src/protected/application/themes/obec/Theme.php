@@ -61,5 +61,6 @@ class Theme extends BaseV1\Theme{
         $this->jsObject['assets']['logo-gdf'] = $this->asset('img/logo-gdf.png', false);
         $this->jsObject['assets']['OBEC-Logo'] = $this->asset('img/OBEC-Logo.png', false);
         $this->jsObject['assets']['logo-unb'] = $this->asset('img/logo-unb.png', false);
+        $this->jsObject['assets']['logo-tim'] = $this->asset('img/logo-tim.png', false);
     }
 }
